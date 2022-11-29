@@ -1,0 +1,15 @@
+.container{
+    display: flex;
+    padding: 20px;
+}
+
+.float-child {
+    padding: 20px;
+    margin: 0 auto;
+}  
+
+.short_bio {
+    margin-top: 5px;
+    font-size: 20px;
+    color: white;
+}

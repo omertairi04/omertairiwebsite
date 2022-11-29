@@ -1,0 +1,78 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}Omer Tairi's website{% endblock title %}
+
+<!--
+    Image by 
+    <a href="https://www.freepik.com/free-vector/circuits-blue-red-gradient-digital-background_12067352.htm#query=technology%20background%20speed&position=3&from_view=keyword">
+        Freepik</a>
+-->
+
+{% block content %}
+
+<!-- <section class="hero-section text-center" 
+    style="background-image: url('static/images/pfpbackground.jpg');
+    height: 500px;">
+    <div class="container container--narrow">
+      <div class="hero-section__box">
+        <img src="{% static 'images/profilepic.jpg' %}" class="avatar avatar--xl" alt="profilepic"
+        style="margin-top: 70px;">
+      </div>
+      <br>
+      <h2>I am Omer Tairi from Kumanovo</h2>
+    </div>
+  </section> -->
+
+
+{% for profile in profiles %}
+<div class="hero-section text-center" 
+style="background-image: url('static/images/pfpbackground.jpg');
+height: 500px;">
+  <div class="background">
+    <img style="margin-top: 50px;" src="{{ profile.profilepic.url }}" class="avatar avatar--xl" alt="profilepic">
+    
+    <p class="short_bio">{{ profile.short_intro }}</p>
+  </div>
+</div>
+
+<hr>
+
+<div class="container">
+  <div class="float-child">
+    <div class="card" style="width: 320px">
+      <div class="card__body">
+        <h3>Latest Post</h3>
+        <p>
+          The latest post description
+        </p>
+      </div>
+    </div>
+  </div>
+  
+  <div class="float-child">
+    <div class="card" style="width: 320px">
+      <div class="card__body">
+        <h3>Latest Project</h3>
+        <p>
+          This card shows the project i am currently working on
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <div class="float-child">
+    <div class="card" style="width: 320px">
+      <div class="card__body">
+        <h3>Latest Video</h3>
+        <p>
+          This will be connected to my YouTube channel
+        </p>
+      </div>
+    </div>
+  </div>
+  
+</div>
+{% endfor %}
+
+{% endblock content %}
