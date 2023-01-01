@@ -1,0 +1,32 @@
+body {
+    /* The gradient will start at the top of the page and go to the bottom */
+    background: linear-gradient(to bottom, 
+      /* The gradient will transition through these colors */
+      #5db5e5, 
+      #0283c6, 
+      #016599, 
+      #014f6d, 
+      #003840);
+  }
+  nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 50px;
+    background-color: #fff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 3px;
+  }
+  
+  nav a {
+    text-decoration: none;
+    color: #333;
+    font-size: 16px;
+    font-weight: bold;
+    transition: all 0.2s;
+  }
+  
+  nav a:hover {
+    color: #5db5e5;
+  }
+  
