@@ -1,0 +1,18 @@
+.thumbnail {
+    height: 720px;
+    width: 1519.5px;
+}
+
+
+
+@media (max-width: 800px) {
+    .thumbnail {
+      width: 100%; /* or a specific width in pixels */
+    }
+}
+
+@media (max-width: 800px) {
+  .content-img {
+    width: 100%; /* or a specific width in pixels */
+  }
+}

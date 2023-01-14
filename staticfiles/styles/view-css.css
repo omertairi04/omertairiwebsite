@@ -1,0 +1,10 @@
+.thumbnail {
+    height: 720px;
+    width: 1520px;
+}
+
+@media (max-width: 800px) {
+    .thumbnail {
+      width: 100%; /* or a specific width in pixels */
+    }
+}
